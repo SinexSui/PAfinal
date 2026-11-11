@@ -1,0 +1,10 @@
+Parallel programs are only useful when they are correct. A parallel program that is
+fast but gives a different answer than the sequential one is simply a fast bug.
+
+Word counting looks easy: split the text into words and count them. But when a big
+file is cut into pieces for different processes, a word can be cut in half by the
+border between two pieces. The word "parallel" could become "para" and "llel".
+Every piece must therefore agree on who owns a word: the piece that contains its
+first letter. The same idea is used again inside every process, between threads.
+
+The, the, THE - the same word, three spellings. Numbers like 42 and 3.14 are words too.

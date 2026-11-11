@@ -1,0 +1,5 @@
+build/
+data/strong.txt
+data/weak_*.txt
+__pycache__/
+*.pyc
